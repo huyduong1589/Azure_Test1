@@ -16,7 +16,6 @@ steps:
 
 - script: |
     sudo docker -v
-    php -version
   displayName: 'check Docker'
   
 - script: |

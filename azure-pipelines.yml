@@ -13,6 +13,12 @@ variables:
   phpVersion: 7.2
 
 steps:
+
+- script: |
+    sudo docker -v
+    php -version
+  displayName: 'check Docker'
+  
 - script: |
     sudo update-alternatives --set php /usr/bin/php$(phpVersion)
     sudo update-alternatives --set phar /usr/bin/phar$(phpVersion)
